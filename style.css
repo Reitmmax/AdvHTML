@@ -11,6 +11,7 @@
 header {
     background-color: #7844AB;
 	grid-area: nav;
+	width: 100%;
 }
 #layout { 
     display: grid;
@@ -96,6 +97,12 @@ footer {
     background-color:#7844AB;
    color: #FFE8B5;
 	grid-area: footer;
+     
+  bottom: 0;
+  width: 100%;
+}
+.footerhome {
+	position: absolute;
 }
 footer p {
     text-align: center;
