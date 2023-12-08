@@ -1,0 +1,170 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@font-face{
+    font-family:"Josefin Sans";
+    font-style:default;
+    font-weight: 100px;
+    src:'https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap'
+}
+
+/* Nav */
+header {
+    background-color: #7844AB;
+	grid-area: nav;
+}
+#layout { 
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 1fr;
+     grid-template-areas:
+     "nav"
+		"main"
+		 "footer";
+}
+nav ul {
+    list-style-type:none;
+    display: flex;
+flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+}
+nav ul li  { 
+
+    margin-left: 20%;
+}
+nav ul li a {  
+  color: #FFE8B5;
+text-decoration: none;
+  align-content: center;
+     
+}
+
+nav ul li a:hover {
+    color:#9B8C6B;
+   
+}
+/* picture */
+img {
+    float: right;
+    width: 150px;
+	border-radius: 100px;
+	animation: 1.5s fadein;
+}
+
+/* body */
+body {
+    background-color: rgba(134,34,234,.3);
+    font-family: "Times New Roman";
+	 color:#575554;
+}
+
+.text {
+   
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+	/*animation: 1.5s slidein;*/
+    
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 2em;
+	
+	/*animation: 1.5s slidein;*/
+}
+h3 {
+   text-decoration: underline;
+	text-align: center;
+    font-size: 1.5em;  
+}
+h1, h2, h3 {
+    font-family: "Josefin Sans"
+}
+p {
+    font-size: 1.2em;
+
+}
+blockquote {
+    font-style: italic;
+}
+footer {
+   
+    background-color:#7844AB;
+   color: #FFE8B5;
+	grid-area: footer;
+}
+footer p {
+    text-align: center;
+}
+
+#resources h2, h3 {
+	text-align: center;
+}
+#resources p {
+	padding-left: 15px;
+}
+
+/* To visually hide the link */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+    /* To make skip links visible on focus */
+    .visually-hidden:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: absolute;
+        width: auto;
+        /* Adjust the remaining properties to match design */
+        outline: none;
+        top: 1.5em;
+        right: 2em;
+        color: white;
+    }
+.scroll-animate {
+	opacity: 0;
+	transform: translateX(-300px);
+	transition: all .4s ease-out;
+	transition-delay: .2s;
+}
+
+.animate {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+@media screen and  (max-width: 514px ) {
+	.scroll-animate {
+		opacity: 1;
+		transform: translateX(0px);
+
+		
+	}
+	nav ul li  { 
+    margin-left: 15%;
+}
+}
+
+
+
