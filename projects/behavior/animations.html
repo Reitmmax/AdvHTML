@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animations.css">
+	<link rel="stylesheet" href="flexslider-demo/css/flexslider.css">
+<script src="flexslider-demo/js/modernizr.js"></script>
+<title>MR CSS Animations</title>
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+		<h4>Cat Scratch Studios</h4>
+		</div>
+		<ul class="nav-links">
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About</a></li>
+		<li><a href="#">Work</a></li>
+	<li><a href="#">Projects</a></li>
+		</ul>
+		<div class="burger">
+		<div class="line1"></div>
+			<div class="line2"></div>
+			<div class="line3"></div>
+		</div>
+	</nav>
+<main>
+	<div class="flexslider">
+  <ul class="slides">
+    <li><img src="img/cat1.jpg" alt="White and gray cat laying on its back happy">
+    <p class="flex-caption"></p></li>
+    <li><img src="img/cat2.jpg" alt="orange and black cat looking at user"></li>
+    <li><img src="img/cat3.jpg" alt="gray and white cat looking at user"></li>
+  </ul>
+</div>
+<details>
+	<summary>Accordion Disclosure Widget</summary>
+	<div class="dialog-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus est pellentesque elit ullamcorper. Quis imperdiet massa tincidunt nunc. Cum sociis natoque penatibus et magnis dis parturient montes. Aliquam ut porttitor leo a diam sollicitudin. Iaculis urna id volutpat lacus laoreet non curabitur gravida arcu. In eu mi bibendum neque. Volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Suspendisse interdum consectetur libero id faucibus nisl. Morbi tempus iaculis urna id volutpat lacus. Mattis nunc sed blandit libero volutpat sed cras ornare arcu.
+		</div>	
+		
+		</details>
+	
+	
+	</main>
+	<footer><small>&copy; Max Reitmayer 2023</small></footer>
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+<script>window.jQuery || document.write('<script 
+src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+	
+	<!-- FlexSlider -->
+<script defer src="flexslider-demo/js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+  $(window).load(function(){
+    $('.flexslider').flexslider({	  
+      animation: "slide", 
+      start: function(slider){ 
+        $('body').removeClass('loading');  
+      }
+    });
+  });
+</script>
+	
+	<script src="animations.js"></script>
+	</body>
+	
+</html>

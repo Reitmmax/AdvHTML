@@ -1,0 +1,67 @@
+
+header {
+    height: 25vh;
+    background-image: url(galaxy%20header.jpg);
+    background-size: cover;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    
+}
+h1 {
+    text-align: center;
+    color:white;
+    
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+    
+}
+
+nav ul li {
+	margin: 10px;
+}
+
+nav a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+}
+
+nav a:hover {
+	color: #2d2d33;
+}
+body {
+    background-color: #151519;
+    color:white;
+}
+h2 {
+    text-align: center;
+}
+.galaxy {
+    float: right;
+    width: 150px;
+    shape-outside: image('galaxy inline.jpg');
+    
+}
+
+.col{
+    column-count: 3;
+    column-gap: 15px;
+}
+.planets {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center; 
+}
+
+.planets img{
+    width: 250px;
+    padding: 10px;
+}

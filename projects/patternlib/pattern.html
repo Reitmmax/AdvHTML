@@ -1,0 +1,208 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pattern Library</title>
+</head>
+<link rel="stylesheet" charset="text/css"  href="pattern.css">
+<body>
+	<main>
+	<h1>Pattern Library</h1>
+		<p>This is a pattern library of the content of the <a href="https://butlerccwebdev.net/support/index.php">Butler Community College Webhosting</a> page! This showcases the different elements used on the page and some of the designs on said page.  </p>
+		<h2>Typography</h2>
+		<section id="typography">
+		<h1>Example of h1</h1>
+		<h2>Example of h2</h2>
+		<h3>Example of h3</h3>
+		<h4>Example of h4</h4>
+		<p>Example of paragraph</p>
+		
+		</section>
+
+		<h3>CSS Code:</h3>
+		
+		<pre><code>
+		&lt;h1&gt;Example of h1&lt;/h1&gt;
+		&lt;h2&gt;Example of h2&lt;/h2&gt;
+		&lt;h3&gt;Example of h3&lt;/h3&gt;
+		
+		&lt;h4&gt;Example of h4&lt;h4&gt;
+		&lt;p&gt;Example of p&lt;p&gt;
+			
+#typography h1, h2, h3, h4 {
+	font-family: Gotham, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+
+}
+#typography h1, h2 {
+	color: #43125f;
+	font-size: 2em;
+
+}
+#typography h3 {
+	font-size: 1.5em;
+}
+
+#typography h4 {
+	font-size: 1.125em;
+}
+#typography p {
+	font-size: 16px;
+	font-family: Gotham, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+}</code></pre>
+	
+		
+		<h2>Table</h2>
+	<section id="table">
+		<table>
+		<tr>
+		<th>Table</th>	
+		<th>Headings</th>
+		<th>Example</th>
+			</tr>
+		<tr>
+			<td>First</td>
+			<td>Row</td>
+			<td>Example</td>
+			</tr>
+			
+			<tr>
+			<td>Second</td>
+			<td>Row</td>
+			<td>Example</td>
+			</tr>
+		</table>
+		</section>
+		
+		<h3>CSS Code:</h3>
+		<pre><code>
+		&lt;table&gt;
+		&lt;tr&gt;
+		&lt;th&gt;Table&lt;/th&gt;	
+		&lt;th&gt;Headings&lt;/th&gt;
+		&lt;th&gt;Example&lt;/th&gt;
+			&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;First&lt;/td&gt;
+			&lt;td&gt;Row&lt;/td&gt;
+			&lt;td&gt;Example&lt;/td&gt;
+			&lt;/tr&gt;
+		
+			&lt;tr&gt;
+			&lt;td&gt;Second&lt;/td&gt;
+			&lt;td&gt;Row&lt;/td&gt;
+			&lt;td&gt;Example&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+#table {
+	font-size: 16px;
+	font-family:Gotham, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+}
+#table th {
+	color: white;
+	background-color: #4A176C 
+}
+
+#table tr:nth-child(odd) {
+background: #e0e0e0;
+}
+		
+		
+		</code></pre>
+		
+		<h2>Nav</h2>
+		<section id="nav">
+			<p><a href="#">Link</a> &gt; page you're on</p>
+		
+		</section>
+		
+		
+		<h3>CSS Code:</h3>
+		<pre><code>
+			
+&lt;p&gt;&lt;a href="$"&gt;Link&lt;/a&gt; &gt; page you're on&lt;/p&gt;
+		
+#nav {
+	font-size: 16px;
+	font-family: Gotham, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif
+}
+
+#nav a {
+	color: #42315f;
+}</code></pre>
+	<h2>Videos</h2>
+		<section id="vid">
+		<video controls>
+			<source src="https://www.youtube.com/watch?v=JxS5E-kZc2s">
+			
+			
+			</video>
+		<figcaption>Example of figcaption</figcaption>
+		
+		
+		</section>
+		<h3>CSS Code:</h3>
+		<pre><code>
+		&lt;video&gt;
+			&lt;source src="#"&gt;
+			
+			
+			&lt;/video&gt;
+		&lt;figcaption&gt;Example of figcaption&lt;/figcaption&gt;
+			
+#vid video{
+	width: 480px;
+	height: 270px;
+	
+}
+
+#vid figcaption{
+	font-size: 13px;
+	font-family: Gotham, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+}
+				</code></pre>
+		
+		
+		<h2>Audio</h2>
+		<section id="audio">
+		<audio controls>
+			<source src="#">
+			
+			</audio>
+		
+		<figcaption>Example of figcaption</figcaption>
+		</section>
+		<h3>Code:</h3>
+			<pre><code>
+		
+		&lt;audio controls&gt;
+			&lt;source src="#"&gt;
+			
+			&lt;/audio&gt;
+		
+		&lt;figcaption&gt;Example of figcaption&lt;/figcaption&gt;
+		
+				
+	#audio figcaption{
+	font-size: 16px;
+	font-family: Gotham, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+		}</code></pre>
+		
+		
+	
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</main>	
+	
+<footer>&copy; Max Reitmayer 2023</footer>	
+</body>
+</html>

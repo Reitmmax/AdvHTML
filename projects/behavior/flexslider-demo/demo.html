@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta content="charset=utf-8">
+  <title>FlexSlider 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="css/demo.css">
+  
+  <!-- Add link to flexslider CSS (must follow link to project CSS) -->
+  <link rel="stylesheet" href="css/flexslider.css">
+
+  <!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+</head>
+<body class="loading">
+  <header>
+    <h1><a class="logo" href="http://www.woothemes.com" title="WooThemes">
+      <img src="images/logo.png" alt="WooThemes"></a>FlexSlider 2</h1>
+  </header>
+
+  <main id="main">
+    <section class="slider">
+     <h2>Basic Slider</h2>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+          <img src="images/kitchen_adventurer_cheesecake_brownie.jpg">
+		  <p class="flex-caption">Adventurer Cheesecake Brownie</p>
+          </li>
+          <li>
+          <img src="images/kitchen_adventurer_lemon.jpg">
+          </li>
+          <li>
+          <img src="images/kitchen_adventurer_donut.jpg">
+          </li>
+          <li>
+          <img src="images/kitchen_adventurer_caramel.jpg">
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="tutorial">
+      <h2>How to implement the Basic Slider</h2>
+      <p>The following instructions assume you have copied this file and included css, images, and js folders to your final project folder.</p>
+      <ol>
+        <li>To the &lt;head&gt; element of the page that will contain the slider, add the following after the link to your project .css file:
+          <pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/flexslider.css&quot;&gt;
+&lt;script src=&quot;js/modernizr.js&quot;&gt;&lt;/script&gt;</pre>
+        </li>
+        <li>Add a &lt;div&gt; with unordered list of images for the slider inside either the &lt;main&gt; element or page &lt;header&gt; element. Note you must assign <strong><em>flexslider</em></strong> class to the div element and <strong><em>slides</em></strong> class to the unordered list element as shown in the example below. 
+<pre>&lt;div class=&quot;flexslider&quot;&gt;
+  &lt;ul class=&quot;slides&quot;&gt;
+    &lt;li&gt;&lt;img src=&quot;images/slide1.jpg&quot;&gt;
+    &lt;p class=&quot;flex-caption&quot;&gt;Caption text&lt;/p&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;images/slide2.jpg&quot;&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src=&quot;images/slide3.jpg&quot;&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</pre>
+		  </li>
+       <li>Optionally, to display a caption under a slide, add a &lt;p&gt; with assigned <strong><em>flex-caption</em></strong> class after the &lt;img&gt; element as shown in the example above.</li>
+        <li>Add the following to the bottom of the page, just before the closing &lt;/body&gt; tag:
+          <pre>
+&lt;!-- jQuery --&gt;
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&quot;&gt;
+&lt;/script&gt;
+&lt;script&gt;window.jQuery || document.write('&lt;script 
+src=&quot;js/libs/jquery-1.7.min.js&quot;&gt;\x3C/script&gt;')&lt;/script&gt;
+
+&lt;!-- FlexSlider --&gt;
+&lt;script defer src=&quot;js/jquery.flexslider.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $(window).load(function(){
+    $('.flexslider').flexslider({	  
+      animation: &quot;slide&quot;, 
+      start: function(slider){ 
+        $('body').removeClass('loading');  
+      }
+    });
+  });
+&lt;/script&gt;
+
+&lt;!-- Optional FlexSlider Additions --&gt;
+&lt;script src=&quot;js/jquery.easing.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.mousewheel.js&quot;&gt;&lt;/script&gt;
+&lt;script defer src=&quot;js/demo.js&quot;&gt;&lt;/script&gt;</pre>
+        </li>
+        <li>Once the slider is in place and successfully working, replace the demo files in the images folder with your own images. Note all images should be scaled to approximately the same dimensions.</li>
+      </ol>
+    </section>
+  </main>
+  <footer>
+    <p><small>Flexslider 2 Instructions, 2018</small></p>
+  </footer>
+
+<!-- Add all the following before the closing body tag -->
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+
+</body>
+</html>

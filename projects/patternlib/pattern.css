@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+main {
+	padding-left: 10px;
+}
+#typography h1, h2, h3, h4 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-left: 20px;
+
+}
+#typography h1, h2 {
+	color: #43125f;
+	font-size: 2em;
+
+}
+#typography h3 {
+	font-size: 1.5em;
+}
+
+#typography h4 {
+	font-size: 1.125em;
+}
+#typography p {
+	font-size: 16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-left: 25px;
+}
+#table {
+	font-size: 16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#table th {
+	color: white;
+	background-color: #4A176C; 
+}
+
+#table tr:nth-child(odd) {
+background: #e0e0e0;
+}
+	
+#nav {
+	font-size: 16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#nav a {
+	color: #42315f;
+}
+
+#vid video{
+	width: 480px;
+	height: 270px;
+ 	padding-left: 30%;
+}
+
+#vid figcaption{
+	font-size: 13px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+#audio figcaption{
+	font-size: 16px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+pre  {
+	border: thick, 2px;
+	border-color: #42315f;
+	box-sizing: content-box;
+}

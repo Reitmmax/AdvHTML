@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+body {
+	background-color: #42a2ce;
+	color: #eee;
+	font-family: Univers, Calibri, "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+.logo {
+	float: left;
+	margin-right: .5em;
+}
+pre {
+	background-color: #f0ffff;
+	border-radius: 4px;
+	color: #333;
+	font-size: 1.25rem;
+	padding: 1em;
+}
+ol li {
+	margin-bottom: 1em;
+}
+footer {
+	border-top: 1px solid #fff;
+	font-style: italic;
+}
+.flex-caption {
+  color: #333;
+}

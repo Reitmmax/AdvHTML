@@ -1,0 +1,123 @@
+html {
+  font-size: 100%;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+}
+body, main {
+  width: 80vw;
+  margin: 0 auto;
+}
+.buttons button {
+  background-color: #046380;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 #034154;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+  margin-right: 5px;
+  outline: none;
+  padding: 10px 15px;
+  position: relative;
+  top: -10px;
+  transition: opacity .4s ease-out, transform .4s ease-out, visibility .4s ease-out;
+}
+.buttons button:hover {
+  background-color: #034f66;
+}
+.buttons button:active {
+  background-color: #034154;
+  box-shadow: none;
+  position: relative;
+  top: -8px;
+  left: 2px;
+}
+.buttons {
+  position: relative;
+  z-index: 10;
+}
+
+/* Add style rules from video here */
+
+.blue-eyes .eye-color {
+    fill: blue;
+    
+}
+.sad .mouth {
+    
+    transform: scale(.5) rotate(180deg);
+    transform-origin: 350px 380px;
+    
+}
+.move-around .inner-eye-group {
+    animation: moveEyes 10s infinite;
+}
+
+@keyframes moveEyes {
+    20% {
+        transform: translate(-18px, -20px);
+    }
+    40% {
+        transform: translate(0,0);
+    }
+    65% {
+        transform: translate(18px, -20px);
+    }
+}
+
+@keyframes leftWhisk {
+    20% {
+        transform: rotate(5deg);
+    }
+    60% {
+        transform: rotate(-5deg);
+    }
+}
+
+.move-around .left-whiskers {
+    animation: leftWhisk 3s infinite;
+    transform-origin: 325px 350px;
+}
+
+@keyframes rightWhisk {
+    5% {
+        transform: rotate(-2deg);
+    }
+    90% {
+        transform: rotate(7deg);
+    }
+}
+
+.move-around .right-whiskers {
+    animation: rightWhisk 5s infinite;
+    transform-origin: 325px 350px;
+}
+
+@keyframes move {
+    20% {
+        transform: rotateY(10deg) rotateX(10deg);
+    }
+      40% {
+        transform: rotateY(25deg) rotateX(10deg);
+    }
+      60% {
+        transform: rotateY(-10deg) rotateX(-10deg);
+    }
+      85% {
+        transform: rotateY(-10deg) rotateX(-16deg);
+    }
+    
+    
+}
+.move-around {
+    animation: move 8s infinite;
+}
+
+.svg-cont {
+    perspective: 700px; /* higher the number, the more extreme the animation */
+}

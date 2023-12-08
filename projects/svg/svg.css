@@ -1,0 +1,79 @@
+@charset "utf-8";
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.layout { 
+    display: grid;
+    grid-template-rows: 100px 50px 1fr 3em;
+    grid-template-columns: auto 1fr auto;
+     grid-template-areas:
+      "banner banner banner"
+        "nav nav nav"
+      "main main main"
+      "footer footer footer";
+}
+nav {
+	grid-area: nav;
+	background-color: #9A1FEC;
+}
+nav ul  {
+	display: flex;
+	flex-direction: row;
+	
+	padding-top:20px;
+	
+}
+nav ul li {
+	padding: 0 10%;
+	list-style: none;
+	
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #E4F873;
+}
+nav ul li a:hover {
+	color: #748706;
+}
+
+ footer {
+	 background-color: #6B0EA9; 
+    grid-area: footer;
+    height: 5vh;
+	 text-align: center;
+	 color: #E4F873;
+    
+} 
+main {
+    grid-area: main;
+   
+}
+
+header {
+	background-color:#6B0EA9;
+	height: 20vh;
+	grid-area: banner;
+	color: #E4F873;
+	
+}
+header h1 {
+	text-align: left;
+	
+	float: none;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+#book2 {
+float: right;
+	transform: scaleX(-1);
+}
+
+
+#teacher {
+	height: 350px;
+}
